@@ -247,26 +247,48 @@
   &__photo {
     width: 100%;
     display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+
 
 
     &-details {
-      display: block;
-      text-align: center;
-      font-family: sans-serif;
       font-size: 1.5rem;
-      color: var(--color-primary-dark);
       font-weight: 600;
-      display: none;
+      text-transform: uppercase;
+      border: none;
+      color: #fff;
+      background-color: var(--color-primary);
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s;
+      position: relative;
+      top: 0;
+      left: 0;
+
+
 
       &:hover {
-        cursor: pointer;
-
-
+        display: none;
+        transform: translateY(-100%);
       }
 
+
+
+
     }
+
   }
+
+
+
 }
+
+
 
 /*************************** HOTEL OVERVIEW *************/
 .overview {
