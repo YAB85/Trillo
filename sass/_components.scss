@@ -231,40 +231,12 @@
 
 .gallery {
 	display: flex;
-
-	&__item-box {
-		//display: flex;
-		position: relative;
-	}
+	transition: all .8s;
+	position: relative;
 
 	&__photo {
 		width: 100%;
-		display: block;
-		position: relative;
-		overflow: hidden;
-		cursor: pointer;
-		z-index: 1;
-
-		&-details {
-			font-size: 1.5rem;
-			font-weight: 600;
-			text-transform: uppercase;
-			text-align: center;
-			border: none;
-			color: #fff;
-			background-color: var(--color-primary);
-			height: 4rem;
-			width: 100%;
-			transition: all .2s;
-			position: absolute;
-			bottom: -4rem;
-
-			z-index: 10;
-
-			&:hover {
-				transform: translateY(-100%);
-			}
-		}
+		//display: block;
 	}
 }
 
