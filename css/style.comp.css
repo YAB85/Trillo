@@ -291,32 +291,11 @@ body {
 
 /*************************** GAlLERY *************/
 .gallery {
-  display: flex; }
+  display: flex;
+  transition: all .8s;
+  position: relative; }
   .gallery__photo {
-    width: 100%;
-    display: block;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    z-index: 1; }
-    .gallery__photo-details {
-      font-size: 1.5rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      border: none;
-      color: #fff;
-      background-color: var(--color-primary);
-      height: 4rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all .2s;
-      position: relative;
-      top: 0;
-      left: 0; }
-      .gallery__photo-details:hover {
-        display: none;
-        transform: translateY(-100%); }
+    width: 100%; }
 
 /*************************** HOTEL OVERVIEW *************/
 .overview {
